@@ -4,6 +4,14 @@ finale = []
 import math
 import matplotlib.pyplot as plt
 
+def tab(nombre, increment):
+    i=0
+    tab = []
+    while i<= nombre:
+        tab.append(i)
+        i = i+increment
+    return tab
+
 def one_two_attack(q, number_of_attack):
     
     #variable q = puissance de hashage relative de l'attaquant (0-0.5)
