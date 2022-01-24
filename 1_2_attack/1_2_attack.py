@@ -46,21 +46,25 @@ def one_two_attack(q, number_of_attack):
   
   
   
-def simulation_1_2_attack(): #méthode pour créer un graphe montrant l'efficacité de l'attaque en fonction du taux de hashage relatif
-    i=0 #l'éxécution du programme est très longue 
-    premier_seuil = False
+def simulation_double_spend():
+    i=0
     result = []
-    while(i < 0.5): #On effectue 275 attaque de 15000 cycle avec une puissance de hashage incrémentée à chauqe itération
-        esperance = one_two_attack(i,15000)
+    itération = 0
+    premier_seuil = False
+    N = int(input('Number of cycle'))
+    a = int(input('Ecart toléré avec la blockchain principale'))
+    z= int(input("Nombre de confirmation"))
+    block_premine = int(input("Nombre de block préminé"))
+    while(i < 0.5): #On effectue 275 attaque de N cycle avec une puissance de hashage incrémentée à chaque itération
+        esperance = double_spending(N,a,z,block_premine,i)
         result.append(esperance)
         if(esperance > i):
-            if(premier_seuil == False): #affiche la premiere puissance ou le rendement E[H]/E[R] > q
+            if(premier_seuil == False): #affiche la premiere puissance ou le rendement E[R]/E[H] > q
                 print("Il a été rentable de miner avec une puissance de %f" % (i))
                 premier_seuil = True
         i=i+0.002
         
     y_axis = tab(0.5,0.002)
-
     plt.plot(y_axis, result, label = "attacker ") #creation du plot
     plt.plot(y_axis,y_axis, label="honest mining")
     plt.xlabel('puissance de hashage')
