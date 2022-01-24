@@ -15,4 +15,7 @@ Si il mine le premier block, l'attaque continue et se décline en 3 scenario (Ic
 Une fois l'attaque réalisé, on repertorie le nombre de block officiel issu par l'attaquant divisé par l'ensemble des blocks de la blockchain officielle, ce qui nous permet de determiner le rendement. 
 
 
-Afin de représenter le taux de hashage minimum pour obtenir un rendement R > q avec q la puissance de hashage relative, une méthode effectue des successions de 15000 cycles d'attaque en utilisant une puissance de hashage croissante et en dresse un graphique. Ainsi, on peut s'appercevoir sur le graphique en annexe que la puissance minimum pour atteindre un seuil de retabilité par rapport à un mineur lambda est de q = 41% de puissance de hashage relatif.
+Afin de représenter le taux de hashage minimum pour obtenir un rendement R > q avec q la puissance de hashage relative, une méthode effectue des successions de 15000 cycles d'attaque en utilisant une puissance de hashage croissante et en dresse un graphique. Ainsi, on peut s'appercevoir sur le graphique en annexe que la puissance minimum pour atteindre un seuil de retabilité par rapport à un mineur lambda est de q = 41% de puissance de hashage relatif (la courbe bleue correspondant au comportement d'un mineur malhonnete).
+
+
+![image](https://user-images.githubusercontent.com/76626503/150865537-5047a030-20fe-4b7b-a09c-1265524f8727.png)
