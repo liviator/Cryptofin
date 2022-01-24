@@ -22,7 +22,7 @@ def double_spending( N, a, z,block_premine, q):
                 break
             else:
                 block_diff = blockchain_honnete - block_attack #Le minage est interrompu si la blockchain principale double l'attaquant d'un nombre a block 
-                if block_diff > a: 
+                if block_diff >= a: 
                     E_Official = E_Official  + blockchain_honnete
                     break
     E_Official = E_Official / N
