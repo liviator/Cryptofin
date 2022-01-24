@@ -1,3 +1,18 @@
+import time
+import random
+finale = []
+import math
+import matplotlib.pyplot as plt
+
+
+def tab(nombre, increment):
+    i=0
+    tab = []
+    while i<= nombre:
+        tab.append(i)
+        i = i+increment
+    return tab
+
 def double_spending( N, a, z,block_premine, q): 
     #q = puissance de hachage relative
     #z = nombre de confirmation
