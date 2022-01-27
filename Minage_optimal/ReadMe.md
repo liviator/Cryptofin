@@ -19,8 +19,9 @@ action abandonner: le joueur peut être contraint à abandonner dans le cas ou h
 Ainsi en prennant en compte ses actions et en calculant via recursivité depuis l'état initial de l'esperance (à n=0), nous pouvons obtenir le gain que peut gagner un joueur lorsqu'il effectue cette technique
 
 
-L'image ci-contre représente une simulation avec les paramètre a = 0, h = 0 et n = 13, le cout ainsi que la puissance de hashage étant variable. Ainsi, il existe une puissance de hashage permettant un rendement supérieur à celui d'un mineur honnete si le nombre de block visé est suffisament élevé
-![image](https://user-images.githubusercontent.com/76626503/150873725-93cb1e97-28e1-4018-925c-5f5be2e6a7da.png)
+L'image ci-contre représente une simulation avec les paramètre a = 0, h = 0 et des paramètre variable pour N le cout ainsi que la puissance de hashage étant variable. Ainsi, il existe une puissance de hashage permettant un rendement supérieur à celui d'un mineur honnete si le nombre de block visé est suffisament élevé
+![image](https://user-images.githubusercontent.com/76626503/151389419-6bd6211d-bed1-42cf-9a0c-888d469ba53d.png)
+
 
 
 
